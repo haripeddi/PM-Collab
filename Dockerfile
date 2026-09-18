@@ -55,8 +55,6 @@ RUN pnpm install --frozen-lockfile --prod && rm -rf /home/node/.cache/pnpm
 
 RUN mkdir -p /app/data/storage
 
-VOLUME ["/app/data/storage"]
-
 EXPOSE 3000
 
 CMD ["pnpm", "start"]
