@@ -1,0 +1,9 @@
+/*
+ * Tailwind for the Phenom-design-system conversion of the editor's "new page"
+ * shell (full-editor wrapper, title, fixed toolbar). Preflight is skipped on
+ * purpose: this app already has Mantine's own base/reset styles loaded
+ * (@mantine/core/styles.css in main.tsx) and Tailwind's preflight would
+ * fight with them app-wide. We only want Tailwind's utility classes.
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
